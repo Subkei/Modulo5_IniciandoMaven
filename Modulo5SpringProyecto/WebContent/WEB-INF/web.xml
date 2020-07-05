@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Modulo5Spring1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>proyecto</servlet-name>
+    <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>proyecto</servlet-name>
+    <url-pattern>/listadoAccidentes.jsp</url-pattern>
+    <url-pattern>/listadoAsesorias.jsp</url-pattern>
+    <url-pattern>/listarCapacitaciones.jsp</url-pattern>
+    <url-pattern>/listarClientes.jsp</url-pattern>
+    <url-pattern>/listarEmpleados.jsp</url-pattern>
+    <url-pattern>/listarMejoras.jsp</url-pattern>
+    <url-pattern>/listarPago.jsp</url-pattern>
+    <url-pattern>/index.jsp</url-pattern>
+    <url-pattern>/listadoAccidentes.html</url-pattern>
+    <url-pattern>/listadoAsesorias.html</url-pattern>
+    <url-pattern>/listarCapacitaciones.html</url-pattern>
+    <url-pattern>/listarClientes.html</url-pattern>
+    <url-pattern>/listarEmpleados.html</url-pattern>
+    <url-pattern>/listarMejoras.html</url-pattern>
+    <url-pattern>/listarPago.html</url-pattern>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+</web-app>
